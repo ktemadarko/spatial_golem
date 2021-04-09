@@ -1,17 +1,32 @@
 Package: urbanAnaemia
-Title: An Amazing Shiny App
+Title: Ghana_urban_anaemia
 Version: 0.0.0.9000
-Authors@R: 
-    person(given = "firstname",
-           family = "lastname",
-           role = c("aut", "cre"),
-           email = "your@email.com")
-Description: What the package does (one paragraph).
+Authors@R: person('Korantema', 'Owusu-Darko', email = 'aowusuda@asu.edu', role = c('cre', 'aut'))
+Description: A shiny app which does the following things.
+  Displays the percentage of Ghanaian children with anaemia according to the 2019 
+  Ghana Malaria Indicator Survey.
+  Highlights the percentage of built up environment in each of the regions in Ghana.
+  Logistic regression to find the determinants of anaemia in Ghanaian children under 
+  5 from the 2019 GMIS data
 License: What license is it under?
 Imports: 
+    attempt,
     config,
+    DT,
+    glue,
     golem,
-    shiny
+    htmltools,
+    processx,
+    shiny,
+    thinkr
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1
+URL: https://github.com/ktemadarko/spatial_golem
+BugReports: https://github.com/ktemadarko/spatial_golem/issues
+Suggests: 
+    rmarkdown,
+    knitr,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
